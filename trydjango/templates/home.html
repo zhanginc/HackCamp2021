@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Restuarant Recommender</title>
+		<style>
+		
+			.des {
+			text-align: center;
+			background-color: #FFF3E4;
+			padding: 20px;
+			border-style: solid;
+			}
+
+			#headings {
+				font-size: 50px;
+				padding: 12px;
+				font-family: "lucida-handwriting", cursive;
+			}
+			.dropbtn {
+			  background-color: #FFBF86;
+			  color: white;
+			  padding: 16px;
+			  font-size: 16px;
+			  border: none;
+			  cursor: pointer;
+			}
+
+			.dropbtn:hover, .dropbtn:focus {
+			  background-color: #FED2AA;	
+			}
+
+			.dropdown {
+			  float: left;
+			  position: relative;
+			  display: inline-block;
+			  padding: 12px;
+			}
+
+			.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  background-color: #f1f1f1;
+			  min-width: 160px;
+			  overflow: auto;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			  right: 0;
+			  z-index: 1;
+			}
+
+			.dropdown-content a {
+			  color: black;
+			  padding: 12px 16px;
+			  text-decoration: none;
+			  display: block;
+			}
+
+			.dropdown a:hover {background-color: #ddd;}
+
+			.show {display: block;}
+			
+			.background{
+			background-color: #CEE5D0;	
+			background-image: url("https://images.unsplash.com/photo-1471286274405-579f8d7132d8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBhc3RlbCUyMGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+			background-size: cover;
+			font-family: "lucida-handwriting", cursive;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class = "background">
+		<div class="des">
+		<h1 class="headings">
+			<div id ="name">
+			<label for="flabel">MORE-ISH</label><br>
+			</div>
+		</h1>
+		MORE-ISH is a restuarant reccomendation app where the user can input their favourite resturant and get an recoommendation of other similar restaurants that they may like based on their favourite restaurant.
+		Using this reccomendation app, users are able to discover new and different restaurants to dine at based on their liking.
+		</div>
+		<h2 id="headings">
+		<form>
+			<div id ="name">
+			<label for="fname">Name:</label><br>
+			<input type="text" id="fname" name="fname"><br>
+			</div>
+		</form>
+		</h2>
+		<h3 id="headings">
+		<form>
+			<div id ="name">
+			<label for="fcuisine">Cuisine:</label><br>
+			<input type="text" id="fcuisine" name="fcuisine"><br>
+			</div>
+		</form>
+		</h3>
+		<br>
+		<h4 id="headings">
+		<form action="/action_page.php">
+			<div id="price">
+			<label for="fprice">Price:</label><br>
+			<input type="text" id="fprice" name="fprice"><br>
+			<br>
+			<input type="submit" class="dropbtn" value="FIND IT!!">
+			</div>
+		</form>
+		</h4>
+		</div>
+	</body>
+</html>
